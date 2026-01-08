@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ZoomControl } from "./components/ZoomControl";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="antialiased">{children}</body>
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+        />
+      </head>
+      <body className="antialiased">
+        <ZoomControl />
+        {children}
+      </body>
     </html>
   );
 }
