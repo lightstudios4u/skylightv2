@@ -40,6 +40,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
               FAQ
             </a>
             <a
+              className="text-slate-700 hover:text-slate-900"
+              href="/contact-us"
+            >
+              Contact
+            </a>
+            <a
               className="rounded-xl bg-orange-500 px-4 py-2 text-white hover:bg-orange-600"
               href="#request"
             >
