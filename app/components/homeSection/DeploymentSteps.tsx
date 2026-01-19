@@ -35,9 +35,7 @@ export function DeploymentSteps({ steps }: { steps: Step[] }) {
                     <p className="text-xs font-bold tracking-widest text-orange-500">
                       {s.num}
                     </p>
-                    <h3 className="text-lg font-bold text-white">
-                      {s.title}
-                    </h3>
+                    <h3 className="text-lg font-bold text-white">{s.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-white/80">
                       {s.desc}
                     </p>
@@ -60,9 +58,8 @@ export function DeploymentSteps({ steps }: { steps: Step[] }) {
               What happens after you scan
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-white/80">
-              The QR code creates a digital record that follows the net
-              through its service life—timestamped, organized, and
-              audit-ready.
+              The QR code creates a digital record that follows the net through
+              its service life—timestamped, organized, and audit-ready.
             </p>
 
             <ul className="mt-5 space-y-3 text-sm text-white/80">
@@ -73,10 +70,7 @@ export function DeploymentSteps({ steps }: { steps: Step[] }) {
                 "Audit trail: exportable history for compliance reviews (phase 2)",
               ].map((x) => (
                 <li key={x} className="flex gap-2">
-                  <FaCheckCircle
-                    className="mt-0.5 text-orange-400"
-                    size={14}
-                  />
+                  <FaCheckCircle className="mt-0.5 text-orange-400" size={14} />
                   <span>{x}</span>
                 </li>
               ))}
@@ -91,8 +85,8 @@ export function DeploymentSteps({ steps }: { steps: Step[] }) {
               See it in action
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-white/80">
-              Drop your installation demo here (YouTube/Vimeo) or link out.
-              Keep it dead-simple: show the strap system and the QR workflow.
+              Drop your installation demo here (YouTube/Vimeo) or link out. Keep
+              it dead-simple: show the strap system and the QR workflow.
             </p>
 
             <a
@@ -103,11 +97,11 @@ export function DeploymentSteps({ steps }: { steps: Step[] }) {
               Watch Installation Video
             </a>
 
-            <p className="mt-3 text-xs text-white/60">
+            {/* <p className="mt-3 text-xs text-white/60">
               Replace the{" "}
               <code className="rounded bg-black/40 px-1 py-0.5">href</code> with
               your video URL.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

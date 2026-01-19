@@ -56,10 +56,10 @@ export function RequestForm() {
                 Send Request <span className="ml-2">→</span>
               </button>
 
-              <p className="mt-3 text-xs text-gray-400">
+              {/* <p className="mt-3 text-xs text-gray-400">
                 UI only — wire to your backend (EmailJS, Formspree, API route,
                 etc.).
-              </p>
+              </p> */}
             </form>
           </div>
         </div>
