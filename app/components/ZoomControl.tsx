@@ -13,7 +13,7 @@ export function ZoomControl() {
         const touch2 = e.touches[1];
         const distance = Math.hypot(
           touch2.pageX - touch1.pageX,
-          touch2.pageY - touch1.pageY
+          touch2.pageY - touch1.pageY,
         );
 
         // Store this for comparison
@@ -33,7 +33,7 @@ export function ZoomControl() {
             // User zoomed out, snap back
             viewport.setAttribute(
               "content",
-              "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+              "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes",
             );
 
             // Force reflow
