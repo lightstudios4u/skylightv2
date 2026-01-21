@@ -70,7 +70,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 alt="SkylightSafety.Net"
                 width={100}
                 height={100}
-                className="h-7 w-auto"
               />
             </Link>
 
