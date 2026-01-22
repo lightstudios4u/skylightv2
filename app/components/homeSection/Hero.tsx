@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { FaArrowRight, FaPlay, FaBolt, FaShieldAlt, FaQrcode } from "react-icons/fa";
+import Image from "next/image";
+import {
+  FaArrowRight,
+  FaPlay,
+  FaBolt,
+  FaShieldAlt,
+  FaQrcode,
+} from "react-icons/fa";
 import { TrustItem } from "../Shared";
 
 export function Hero() {
@@ -14,15 +21,20 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl px-6 py-12 lg:py-10">
         <div className="text-center">
           <div className="mx-auto mb-6 w-32 sm:w-40">
-            <img src="/logo.png" alt="Logo" className="w-full" />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={160}
+              height={160}
+              className="w-full"
+            />
           </div>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
             Purpose-Built Skylight Fall-Through Protection
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-200">
-            Installs in minutes. Moves job-to-job. Documented with one QR
-            scan.
+            Installs in minutes. Moves job-to-job. Documented with one QR scan.
           </p>
 
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -47,10 +59,12 @@ export function Hero() {
         <div className="relative mx-auto mt-10 max-w-4xl">
           <div className="absolute -left-6 -top-6 h-24 w-24 rounded-3xl bg-orange-500/20 blur-2xl" />
           <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-3xl" />
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl">
-            <img
+          <div className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl w-3/4 h-[300px] mx-auto">
+            <Image
               src="/wideshot.png"
               alt="Workers on roof with skylight protection"
+              width={1200}
+              height={360}
               className="h-[300px] w-full object-cover sm:h-[360px]"
             />
           </div>
